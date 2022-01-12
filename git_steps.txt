@@ -1,0 +1,74 @@
+Optional:
+====
+
+git config --global user.name "snoveedh"
+git config --global user.email "syed.noveedh@gmail.com"
+git config --global push.default matching
+git config --global alias.co checkout
+
+
+You my start from below:
+=======================
+
+
+git init
+git status
+git add . (OR) git add specific_folder/file
+git commit -m "first commit"   (git commit -am "initial commit"
+git remote add origin https://github.com/Snoveedh/SimpleBlog.git
+git push -u origin master
+
+
+
+secured way to push:
+
+1. open git bash and go to the project folder or go to project folder and do right click and select git bash here
+2. use below command to deactivate the virtual server
+
+deactivate
+
+3. mkdir ~/.ssh and cd ~.ssh (remember be in the folder project)
+
+4. pwd
+
+5. ls
+
+6. ssh-keygen.exe 
+
+7. click enter and for password also enter without typing password and enter again and will create the ssh key
+
+8. ls
+
+9. will create 2 files like id_rsa and id_pub which is private and public keys and we need pub key
+
+10. cat id_rsa.pub
+
+11. go to github and profile<setting< ssh and gpg keys < give title < and paste the ssh key from above step < finish
+
+12. go to the prolder again and turn on the virtual environment
+
+13. in github create the repository and follow the below two steps
+
+14. if already created repository in command line and pushed with using below steps and now we are going to push it to the github
+	
+	a. git init (be in the folder and makesure virt is on)
+	b. ls
+	c. git add .
+	d. git commit -am "initial commit"
+
+
+git remote add origin https://github.com/Snoveedh/SimpleBlog.git (orelse you will get these commands after creating the repository)
+
+15. git push -u origin master
+
+16. Now all the files get uloaded in the github repository
+
+17. if you have updated or changed any code and have to repush it to github then follow below steps
+
+	a. go to the folder and activate te virtual environment
+	b. be in project folder
+	c. git add.
+	d. git commit -am "Tweaked about tile or give the changed reason" 
+	e. git push
+
+
