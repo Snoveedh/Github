@@ -16,6 +16,7 @@ git add [file-name.txt]		Add a file to the staging area
 git add -A			Add all new and changed files to the staging area
 git commit -m "[commit message]"	Commit changes
 git rm -r [file-name.txt]	Remove a file (or folder)
+fit
 
 
 Branching & Merging
@@ -64,3 +65,29 @@ git log					View changes
 git log --summary			View changes (detailed)
 git log --oneline			View changes (briefly)
 git diff [source branch] [target branch]	Preview changes before merging
+git log -p -n(n stands for no. of commits)	View commits + removed commits
+git log --stat				shows the changes in short way
+git log --pretty=1 			shows all commit in one line
+git log --pretty=short
+git log --pretty=full
+git log --since=2.days			(filters last 2 days commits)
+git log --since=2.weeks
+git log --since=2.months
+git log --since=2.years
+
+
+
+
+Ignore
+==================================
+command					Description
+-------------				----------------
+
+touch .gitignore
+
+open the file > mention the file names which needs to be ignore
+
+Rename:
+==============
+
+git mv firstname secondname

@@ -3,20 +3,56 @@ Optional:
 
 git config --global user.name "snoveedh"
 git config --global user.email "syed.noveedh@gmail.com"
+git config user.name
+git config user.email
 git config --global push.default matching
 git config --global alias.co checkout
 
 
-You my start from below:
+You may start from below:
 =======================
 
 
 git init
 git status
-git add . (OR) git add specific_folder/file
+touch .gitignore (to ignore files or directory ----> open the .gitignore and mention the filename or /dirname/....So that it will ignore and add other things)
+git add . (OR) git add specific_folder/file (or) git add --a
 git commit -m "first commit"   (git commit -am "initial commit"
 git remote add origin https://github.com/Snoveedh/SimpleBlog.git
-git push -u origin master
+git push origin master or git push -u origin master
+
+
+Pushing the new file or modified file to already existing repository in git:
+====================================================================================
+
+git init
+git status
+git add . (OR) git add specific_folder/file
+git commit -m "first commit"
+git push origin master or git push -u origin master
+#if you get any error with above push
+git push origin master --force
+
+
+Remove a file:
+========================
+
+git rm -r filename (remove a file or folder
+
+git rm --cached filename (it will untrack the file...it will be used when the file is moved later stage of push to ignore
+
+rm -rf .get (it will delete complete got repo)
+
+git commit --amend	(to edit the commits)
+
+git log -p -1
+
+git restore --staged filename  (it will make staged i.e., after add or before commit to unstaged)
+
+git checkout -- filename  (to restore the previous version file after modified commit)
+
+git checkout -f    ( if you modified 50 files also and have retore previous version)
+
 
 
 
@@ -70,5 +106,29 @@ git remote add origin https://github.com/Snoveedh/SimpleBlog.git (orelse you wil
 	c. git add.
 	d. git commit -am "Tweaked about tile or give the changed reason" 
 	e. git push
+
+
+
+Remote clone from git hub:
+=======================================
+
+1. git clone https://github.com/Snoveedh/SimpleBlog.git
+
+
+Ignore
+==================================
+command					Description
+-------------				----------------
+
+touch .gitignore
+
+open the file > mention the file names which needs to be ignore
+
+Rename:
+==============
+
+git mv firstname secondname
+
+
 
 
